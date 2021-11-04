@@ -1,0 +1,15 @@
+.login,
+.image {
+  min-height: 100vh;
+  width: 70%;
+}
+/* <a href="https://ibb.co/M6wfmbK"><img src="https://i.ibb.co/jR0zSdq/Sign-in.png" alt="Sign-in" border="0"></a> */
+.bg-image {
+  background-image: url('https://i.ibb.co/Dkr2Hf2/sign-up.png');
+  background-size: cover;
+  background-position: center center;
+}
+
+.button{
+    width: 100%;
+}

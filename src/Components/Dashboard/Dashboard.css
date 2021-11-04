@@ -1,0 +1,475 @@
+/* DASHBOARD.............. */
+.dashboard{
+    border-radius: 30px;
+    border: 1px solid #d3beee79;
+    padding:2%;
+    background: #f1f1ffad;
+}
+@media only screen and (max-width:800px){
+    .welcome{
+        width: 80%;
+        margin: auto;
+    }
+}
+@media only screen and (max-width:600px){
+    .welcome{
+        width: 100%;
+        padding-left: 2vw;
+    }
+    .dashboard{
+        border-radius: 20px;
+    }
+}
+
+.subHeader{
+    text-align: left;
+    color:#00007a;
+}
+
+/* top nav dashboard.............. */
+.TopNav-container{
+    height: auto;
+    overflow-y:hidden;
+    overflow-x: auto;
+    display: flex;
+    width: 100%;
+    padding:0;
+    margin:0 0 6vh 0;
+}
+@media only screen and (max-width: 800px){
+    .TopNav-container{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap:2vw;
+        margin:auto;
+        width: 80%;
+    }
+}
+@media only screen and (max-width: 600px){
+    .TopNav-container{
+        grid-gap:8px;
+        margin: 2px 0 2px 0 ;
+        width: 100%;
+        padding:0;
+    }
+}
+.TopNav-container::-webkit-scrollbar{
+    display: none;
+}
+.TopNav{
+    border:1px solid #d7daff79;
+    width: 23%;
+    height: 80px;
+    margin:0 15px 0 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 14px;
+    border-radius: 30px;
+    font-size: 0.8rem;
+    background: #fff;
+}
+@media only screen and (max-width: 1000px){
+    .TopNav{
+        width: 30%;
+        padding:12px;
+        
+    }
+}
+@media only screen and (max-width: 800px){
+    .TopNav{
+        width: 85%;
+        padding: 8px;
+        margin:auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .TopNav{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        height: 120px;
+        padding:8px;
+        border-radius: 20px;
+    }
+}
+
+.TopNav .TopNav-icon{
+    width:40px !important;
+    height: 40px !important;
+    background-color: rgb(255, 236, 239);
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+@media only screen and (max-width: 600px){
+    .TopNav .TopNav-icon{
+        width:70px !important;
+        height: 70px !important;
+    }
+}
+.TopNav-detail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    height: 100%;
+    width: 80%;
+    padding: 0 0 0 4px;
+}
+@media only screen and (max-width: 600px){
+    .TopNav-detail{
+        width: 100%;
+        text-align: center;
+    }
+}
+
+
+
+
+
+
+.patientHistoryAndTopDiseases{
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+    margin-bottom: 17vh;
+}
+@media only screen and (max-width: 800px){
+    .patientHistoryAndTopDiseases{
+        flex-direction: column;
+        height: auto;
+    }
+}
+.P-history{
+    width: 62%;
+    text-align: left;
+    height: 100%;
+}
+@media only screen and (max-width: 800px){
+    .P-history{
+        width: 85%;
+        text-align: center;
+        margin:auto;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .P-history{
+        width: 100%;
+    }
+}
+.P_history_container{
+    border:2px solid #d7daff79;
+    padding:3%;
+    border-radius:40px;
+    background: #fff;
+    margin-top: 4vh;
+}
+@media only screen and (max-width:800px){
+    .P_history_container{
+        margin-bottom: 3vh;
+    }
+}
+@media only screen and (max-width:600px){
+    .P_history_container{
+        height: auto;
+    }
+    .P-history-graph{
+        height: 350px;
+    }
+}
+.TopDiseases{
+    width: 35%;
+    height: 100%;
+    text-align: left;
+}
+@media only screen and (max-width: 800px){
+    .TopDiseases{
+        width: 85%;
+        height: auto;
+        margin: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .TopDiseases{
+        width: 100%;
+    }
+}
+.TopDiseases_container{
+    border: 2px solid #d7daff79;
+    padding:3%;
+    border-radius: 40px;
+    background: #fff;
+    margin-top: 4vh;
+}
+
+
+
+
+
+
+
+
+
+/* Today's Patients and Top Doctors */
+.TodayPatientsAndTopDoctors{
+    display: flex;
+    justify-content: space-between;
+    height: 55vh;
+    margin-bottom: 6vh;
+}
+@media only screen and (max-width: 800px){
+    .TodayPatientsAndTopDoctors{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+.TopDoctors{
+    width: 43%;
+    text-align: left;
+    height: 70%;
+}
+@media only screen and (max-width: 800px){
+    .TopDoctors{
+        width: 85%;
+        height: 300px;
+        margin: 5vh auto 5vh auto; 
+    }
+}
+@media only screen and (max-width: 600px){
+    .TopDoctors{
+        width: 100%;
+    }
+}
+.TopDoctors *{
+    list-style-type: none;
+}
+.doc-details{
+    display: flex;
+    width: 50%;
+}
+@media only screen and (max-width: 1077px){
+    .TopDoctors ul{
+        font-size: 0.65rem;
+    }
+    .doc-details{
+        width: 80%;
+    }
+    .doctor_review{
+        width:fit-content;
+    }
+}
+@media only screen and (max-width: 600px){
+    .TopDoctors ul{
+        font-size: 0.8rem;
+    }
+    .doc-details{
+        width: 100%;
+    }
+    .doctor_review{
+        width: 50%;
+    }
+}
+.doc-name-and-spec{
+    text-align: left;
+    margin-left: 10px;
+    
+}
+
+.TopDoctors .TopDoctors-container, .TodayPatients .T_P_graph{
+    background: rgb(250, 250, 255, .5);
+    border: 1px solid rgb(215, 215, 255);
+    border-radius: 50px;
+    padding: 5%;
+    height: 100%;
+    margin-top: 4vh;
+}
+@media only screen and (max-width:600px){
+    .TopDoctors .TopDoctors-container, .TodayPatients .T_P_graph{
+        border-radius: 20px;
+        padding: 2%;
+        height: 80%;
+    }
+}
+
+
+.TodayPatients{
+    width: 55%;
+    text-align: left;
+    padding: 0;
+    height: 100%;
+    /* position: absolute; */
+}
+@media only screen and (max-width: 800px){
+    .TodayPatients{
+        width: 85%;
+        height: auto;
+        margin:auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .TodayPatients{
+        width: 100%;
+    }
+}
+
+
+.TopDoctors ul{
+    height: 100%;
+    overflow-x: hidden;
+    overflow-y: auto scroll;
+}
+.TopDoctors ul::-webkit-scrollbar{
+    display: none;
+}
+.TopDoctors ul li{
+    display: flex;
+    justify-content: space-between !important;
+    margin: 0 0 10px 0;
+    padding: 0;
+}
+
+
+
+
+
+/* Patient Recent activities and revenue */
+.P_RecentActivitiesAndRevenue{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 320px;
+}
+@media only screen and (max-width: 800px){
+    .P_RecentActivitiesAndRevenue{
+        flex-direction: column;
+        height: auto;
+    }
+}
+
+/* patient recent activities */
+.PRA_main{
+    /* border: 2px solid green; */
+    width: 47%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+}
+@media only screen and (max-width: 1000px){
+    .PRA_main{
+        font-size: 0.80rem;
+    }
+    .PRA_innerContainer{
+        padding:1px;
+    }
+}
+@media only screen and (max-width: 800px){
+    .PRA_main{
+        width: 80%;
+        margin: auto;
+        height: 350px;
+    }
+}
+@media only screen and (max-width: 600px){
+    .PRA_main{
+        width: 100%;
+        font-size: 0.8rem;
+    }
+}
+.PRA_innerContainer{
+    border-radius: 30px;
+    border:1px solid #d9e2ff;
+    background-color: rgba(248, 248, 255, 0.068);
+    height: 100%;
+    overflow-y: scroll;
+    margin: 5px 0 0 0;
+}
+.patient_health_status{
+    color:rgb(58, 58, 199);
+    font-weight: bold;
+    padding:1px 4px 1px 4px;
+    border: 0.3px solid blue;
+    border-radius: 4px;
+}
+@media only screen and (max-width:600px){
+    .PRA_innerContainer{
+        border-radius: 20px;
+        padding:0;
+    }
+}
+.PRA_innerContainer::-webkit-scrollbar{
+    /* width: 17px; */
+    display: none;
+}
+.PRA{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2%;
+    margin: 0 0 10px 0;
+    border-bottom: 1px solid #d3d3d377;
+    
+}
+.PRA_Profile{
+    display: flex;
+    text-align: left;
+    align-items: center;
+}
+
+/* revenue */
+.revenue{
+    width: 47%;
+    height: 100%;
+    text-align: left;
+    /* display: flex;
+    flex-direction: column;
+    justify-content: center; */
+    text-align: left;
+    /*  */
+}
+@media only screen and (max-width: 900px){
+    .revenue{
+        width: 51%;
+        padding:0;
+    }
+}
+
+@media only screen and (max-width: 800px){
+    .revenue{
+        width: 80%;
+        margin:6vh auto 4vh auto;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .revenue{
+        width: 100%;
+    }
+}
+.revenue_graph{
+    width: 100%;
+    height: 300px;
+}
+.revenue_innercontainer{
+    width: 100%;
+    /* height: 100%; */
+    border:1px solid #d9e2ff;
+    background-color: rgba(248, 248, 255, 0.068);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;align-items: center;
+    margin: 5px 0 0 0;
+    padding:7px;
+}
+@media only screen and (max-width: 900px){
+    .revenue_innercontainer{
+        padding:0;
+    }
+}

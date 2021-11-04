@@ -1,0 +1,280 @@
+.BodyContainer{
+    display: flex;
+    width: 100%;
+    height: 100vh;
+    
+}
+body{
+    background: linear-gradient(to bottom, #f3f4ff, #f2e3ff8f);
+    overflow: hidden;
+    height: 100vh !important;
+    width: 100%;
+}
+
+
+
+
+/* SIDE BAR......................... */
+.sidebar{
+    width: 18%;
+    padding:0vw 1vw 0vw 1vw;
+    transition: 1.2s ;
+}
+@media only screen and (max-width:1000px){
+    .sidebar{
+        width: 24%;
+    }
+}
+@media only screen and (max-width:800px){
+    .sidebar{
+        position: absolute;
+        background: white;
+        border-top:2px solid rgba(55, 55, 214, 0.4);
+        border-right:2px solid rgba(55, 55, 214, 0.4);
+        border-bottom:2px solid rgba(55, 55, 214, 0.4);
+    }
+    .hideSidebar{
+        transform: translateX(-150%);
+        animation-name: hiding;
+        animation-duration: 2s;
+        animation-delay: 0s;
+    }
+    .showSidebar{
+        width: 45%;
+        animation-name: showing;
+        animation-duration: 1s;
+        animation-delay: 0.2s;
+        transform: translateX(0%);
+    }
+    .logo{
+        display: unset;
+        align-items: unset;
+        justify-content: unset;
+        margin-top: 75px;
+        height: 30px !important;
+    }
+}
+@media only screen and (max-width:600px){
+    .showSidebar{
+        width: 60%;
+    }
+}
+.logo{
+    /* border:5px solid lime; */
+    height: 90px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.logo *{
+    color: rgb(103, 103, 241);
+    font-weight: 800;
+}
+
+/* menu container.......... */
+.menuContainer{
+    /* border: 5px solid rgb(0, 93, 0); */
+    padding:10px;
+    width: 100%;
+    height: 85%;
+}
+@media only screen and (max-width:900px){
+    .menuContainer{
+        padding:0;
+        height: 80vh;
+    }
+}
+*{list-style-type: none;}
+.menuContainer .menuLists *{
+    text-decoration: none;
+    color:rgba(0, 0, 0, 0.575);
+}
+.menuContainer .menuLists{
+    text-align: left;
+    padding: 0;
+    /* border: 2px solid rgb(133, 18, 133); */
+    height: 100%;
+    overflow-y: scroll;
+}
+.menuContainer .menuLists::-webkit-scrollbar{
+    display: none;
+}
+.menuContainer li{
+    padding: 10px 0 10px 0;
+    /* border:1px solid red; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.menu_subLists{
+    width: 100%;
+    transition: 3s ease-in-out;
+}
+.menu_subLists li{
+    transition: 2s linear;
+    font-weight: 500;
+}
+.menuContainer .fas{
+    margin:10px;
+}
+.navLink{
+    display: flex;
+    padding: 0;
+    align-items: center;
+}
+
+
+/* MAIN ............................. */
+.main{
+    width: 85%;
+    padding:0 2vw 0 0;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+@media only screen and (max-width: 800px){
+    .main{
+        width: 100%;
+        padding:0 2vw 0 2vw;
+    }
+}
+@media only screen and (max-width: 600px){
+    .main{
+        width: 100%;
+        padding:0 0.5vw 0 0.5vw;
+    }
+}
+
+/* HEADER ............................. */
+.header{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 90px;
+    padding: 1vh 2vw 1vh 2vw;
+}
+@media only screen and (max-width: 600px){
+    .header{
+        flex-direction: column;
+        height: 150px;
+        margin-top: 2vh;
+    }
+}
+.menuIconAndSearchBar{
+    display: flex;
+    align-items: center;
+    width: 34%;
+}
+@media only screen and (max-width: 800px){
+    .menuIconAndSearchBar{
+        width: 50%;
+        height: auto;
+    }
+}
+@media only screen and (max-width: 600px){
+    .menuIconAndSearchBar{
+        width: 100% !important;        
+    }
+}
+.menuIconAndSearchBar .fa-bars{
+    display: none;
+}
+@media only screen and (max-width: 800px){
+    .menuIconAndSearchBar .fas{
+        display: block;
+        margin-right: 3vw;
+        font-size: 1.3rem;
+        z-index: 100;
+    }
+    .menuIconAndSearchBar{
+    }
+}
+@media only screen and (max-width: 600px){
+    .menuIconAndSearchBar .fa-bars{
+        margin-right: 5vw;
+    }
+    
+}
+/* search .............. */
+
+.searchBar{
+    display: flex;
+    overflow: hidden;
+    border-radius: 20px;
+    background: #fff;
+    padding:2%;
+    width: 100%;
+}
+@media only screen and (max-width: 600px){
+    .searchBar{
+        padding:1%;
+    }
+}
+
+.searchBar button{
+    width: 15%;
+    padding: 0 2% 0 2%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+.searchBar input{
+    padding:3%;
+    width: 85%;
+    border: none;
+    outline: none;
+    background: transparent;
+}
+/* profile.................. */
+.headerLeft{
+    /* border:1px solid red; */
+    width: 300px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+@media only screen and (max-width:600px){
+    .headerLeft{
+        width: 100%;
+        text-align: right;
+        justify-content: flex-end;
+    }
+    .headerLeft button{
+        padding:2%;
+        margin:0 2vh 0 2vh;
+        width: 150px !important;
+    }
+    .headerLeft .fa-bell{
+        margin:0 1vh 0 1vh;
+    }
+    .headerLeft .profilePicture{
+        margin: 0 0 0 2vh;
+    }
+}
+.headerLeft button{
+    padding: 3%;
+    border-radius: 20px;
+    border:none;
+    width: 45%;
+}
+.headerLeft .fa-bell{
+    font-size: 1.4rem;
+    color:gray;
+}
+.headerLeft .profilePicture{
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    /* border:1px solid indigo; */
+}
+
+/* main inner .............. */
+.mainInner{
+    /* border:3px solid indigo; */
+    border-radius: 20px;
+    padding:10px;
+}
+
+
+
+
